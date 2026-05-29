@@ -9,7 +9,7 @@ function App() {
   async function askQuestion() {
 
     const response = await fetch(
-      "http://localhost:3000/ask",
+      "https://complianceaiagent-production-b4fe.up.railway.app/ask",
       {
         method: "POST",
         headers: {
@@ -36,7 +36,7 @@ function App() {
     formData.append("document", file);
 
     const response = await fetch(
-      "http://localhost:3000/upload",
+      "https://complianceaiagent-production-b4fe.up.railway.app/upload",
       {
         method: "POST",
         body: formData
